@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 
 const GradientsList = () => {
   const { filter } = useFilter()
-  const [gradients, setGradients] = useState([])
+  const [gradients, setGradients] = useState([]) //usereducer
   useEffect(() => {
     fetch(`https://gradients-api.herokuapp.com/gradients/`)
       .then(response => {

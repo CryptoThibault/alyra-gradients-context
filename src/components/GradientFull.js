@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 
 const GradientFull = () => {
-  const [gradient, setGradient] = useState({})
-  const [gradientId, setGradientId] = useState(0)
+  const [gradient, setGradient] = useState({}) //usereducer
+  const [gradientId, setGradientId] = useState(0) //usereducer
 
   useEffect(() => {
     fetch(`https://gradients-api.herokuapp.com/gradients/${gradientId}/`)
